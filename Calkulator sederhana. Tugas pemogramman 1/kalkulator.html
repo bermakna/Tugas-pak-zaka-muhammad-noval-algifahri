@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator sederhana</title>
+    <script src="calculator.js"></script>
+</head>
+  <style>
+       * {
+        margin: 0;
+        padding: 0;
+       }
+
+       .header {
+        font-size: 20px;
+        font-family: monospace;
+        color: gray;
+        text-shadow: 2px 2px 2px salmon;
+        padding: 30px;
+       }
+
+       .section {
+
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        box-shadow: 2px 2px 2px slategray;
+        height: 300px;
+        margin-bottom: 13em;
+        
+       }
+
+       .section input {
+
+             margin-bottom: 1.7em;
+       }
+
+       .section button {
+        margin-left: 10em;
+       }
+
+       .footer {
+        background-color: black;
+        text-align: center;
+        text-shadow: 1px 1px 1px slategray;
+        color: white;
+        
+       }
+  </style>
+<body>
+    <div class="header">
+        <h1>Calkulator</h1> <br>
+        <h1>Sederhana</h1>
+    </div>
+    <div class="section">
+        <label>
+            <input type="number" placeholder="masukan angka" id="input1">
+
+            <select id="Calkulator">
+                <option value="+" >+</option>
+                <option value="*">*</option>
+                <option value="_">_</option>
+                <option value="/">/</option>
+            </select>
+
+            <input type="number" placeholder="masukan angka" id="inputb2">
+        </label>
+        <button id="buttond2">munculkan</button>
+    </div>
+    <div class="footer"><p>kalkulator sederhana Noval 2025</p></div>
+
+
+    <script>
+        
+const button = document.getElementById("buttond2");
+const input = document.getElementById("input1");
+const input1 = document.getElementById("inputb2");
+const select = document.getElementById("Calkulator");
+
+
+button.addEventListener("click", function () {
+
+
+    let a = parseFloat(input.value);
+    let b = parseFloat(input1.value);
+
+    let hasil = 0;
+
+    
+    if (select.value === "+") {
+        hasil = a + b;
+    } else if (select.value === "-") {
+        hasil = a - b;
+    } else if (select.value === "*") {
+        hasil = a * b;
+    } else if (select.value === "/") {
+        hasil = a / b;
+    }
+
+    
+    alert(hasil);
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas individu</title>
+    <link rel="stylesheet" href="warna.css">
+    
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="header">
+            <h1>Habit Tracker <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" fill="currentColor" class="bi bi-tree-fill" viewBox="0 0 16 16" style="color: green;">
+  <path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777z"/>
+</svg></h1>
+
+            
+                <li><a href="#">menu</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#Comments">comments</a></li>
+                <li><a href="#"><button id="buttonb2">Login</button></a></li>
+            
+            
+              
+        </div>
+        <div class="hero">
+            <div class="text">
+                <h2>" Selamat datang di website <strong>Habit Tracker </strong> "</h2><br>
+                <p>web ini untuk membuat kamu produktif setiap hari</p>
+                <button>info lengkap di bawah ini</button>
+            </div>
+            <div class="heroTree"><img src="img/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg" alt="" sizes="" srcset="" width="350px" style="margin-top: 5px;"></div>
+        </div>
+        <div class="sectionabout" id="about"><h2>about</h2></div>
+        <div class="sectionisi"><p> Website Habit tracker adalah untuk menumbuhkan kebiasaan sehari hari<br>
+        untuk seseorang bertumbuh seperti Tree " Pohon 🌱 "</p></div>
+        <div class="sectionyuk">
+        <h2>Yuk kita mulai produktifitas harian 😊</h2>
+    </div>
+    <div id="section">
+           <input type="text" name="masukan habit" id="inputb2"> <button class="b1" id="button1">add</button>
+        </div>
+
+        <div class="sectionh2" id="Comments"><h2>Comments</h2></div>
+        <div class="coments">
+            <label for="text"></label>
+            <input type="text" placeholder="kenyamanan web kami" <br>
+            <input type="email" class="email" placeholder="@email"> <br>
+            <button class="yes">sumbit</button>
+        </div>
+        <div class="sectionmotivasi">
+            <h2>Motivasi</h2>
+            <p>“The only way to do great work is to love what you do.” <br>
+           (Satu-satunya cara untuk melakukan pekerjaan hebat adalah mencintai apa yang kamu lakukan.) <br>
+           --Steven Jobs</p>
+        </div>
+        <div class="footer">
+            <p>@Copyrigth 2025 Habit Tracker by Nopal </p>
+        </div>
+    </div>
+    <script>
+        // tombol untuk input
+        const button = document.getElementById("button1")
+        button.addEventListener("click", Sosometing)
+        JSON.parse(localStorage.getItem("todo"))
+        
+        
+        // penampung data 
+        const array = [];
+        
+        
+
+        // fungsi untuk menjalankan 
+        function Sosometing() {
+ 
+            
+            const libaru = document.createElement('li');
+            const inputbaru = document.createElement('input');
+            inputbaru.type = "checkbox" ;
+            libaru.innerHTML = '' ;
+            const textbaru = document.createTextNode(input = document.getElementById('inputb2').value)
+
+            array.push(textbaru)
+
+            libaru.appendChild(textbaru);
+            libaru.appendChild(inputbaru);
+
+            const section = document.getElementById("section")
+
+            section.appendChild(libaru);
+            
+            localStorage.setItem("todo", JSON.stringify(array));
+
+            JSON.parse(localStorage.getItem("todo"))
+            
+        
+        }
+
+
+
+
+    </script>
+
+
+  
+</body>
+</html>

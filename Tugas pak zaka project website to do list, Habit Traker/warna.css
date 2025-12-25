@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    
+}
+
+.container {
+    border: 1px solid black;
+    
+    box-sizing: border-box;
+    width: 100%;
+    
+    
+}
+.header {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5em;
+    position: fixed;
+    box-sizing: content-box;
+    box-shadow: 2px 2px 2px 2px rgb(201, 197, 197);
+    
+}
+
+li {
+    display: flex;
+    background-color:;
+    list-style: none; 
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(201, 197, 197);
+}
+
+a:hover {
+   color: salmon;
+   
+}
+
+.header button {
+    padding: 10px;
+    background-color: #a17ffa;
+    
+    
+}
+
+button:hover {
+    background-color: salmon;
+    transition: 1s;
+}
+
+#section {
+
+    height: 500px;
+    width: 300px;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 15em;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 1px 1px rgb(210, 208, 208);
+    border-radius: 3 3 3 20px rgba(0,0,0,0.1);
+}
+
+.section .b1 button {
+
+}
+
+input {
+    margin: 12px;
+}
+
+button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #a17ffa;
+    border-radius: 3px 3px 3px 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+
+.section input {
+    padding: 10px;
+    border-radius: 3px 3px 3px 3px;
+    
+}
+
+.hero {
+    
+    
+    display: flex;
+    padding: 20px;
+    margin-bottom: 9.5em;
+    position: relative;
+    margin-top: 7.6em;
+    background-color: aliceblue ;
+    position: relative;
+}
+
+.hero h1 p {
+    
+}
+
+.text {
+    
+    width: 500px;
+    padding: 10px;
+    margin-left: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 7.5em;
+    
+}
+
+.text strong {
+    color: orange;
+}
+
+.text p {
+   margin-bottom: 1.5em;
+   font-size: 15px;
+}
+
+.text h2 {
+    font-size: 30px;
+    color: black;
+}
+
+.sectionabout {
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    background-color: ;
+    margin-bottom: 1.5em;
+    font-size: 20px;
+    font-family: sans-serif
+}
+
+.sectionisi {
+    width: 500px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    font-style: italic;
+    padding: 20px;
+    font-size: 25px;
+    margin-bottom: 7.5em;
+}
+
+
+.sectionyuk { 
+    font-family: sans-serif; 
+    width: 500px; 
+    margin: auto; 
+    padding: 20px;
+    margin-bottom: 1.5em;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation: ketik 2s steps(31),
+    cursor 4s step-end infinite alternate;
+    
+}
+
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+@keyframes ketik {
+    from {width: 0}
+}
+
+
+.sectionyuk h2 {
+    margin-left: 1.2em;
+   
+}
+
+.sectionh2 {
+    width: 100px;
+    margin: auto;
+    font-family: sans-serif;
+    margin-bottom: 3.5em;
+}
+
+.coments {
+    width: 300px;
+    height: 400px;
+    margin:  auto;
+    
+    padding: 20px;
+    background-color: ;
+    
+}
+
+.coments .yes{
+      margin-left: 1em;
+      padding: 10px;
+      border-radius: 10px;
+}
+
+.coments input {
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.coments .email  {
+    padding: 10px;
+}
+
+.sectionmotivasi {
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    font-family: sans-serif;
+    box-shadow: 3px 3px 3px 3px whitesmoke;
+    margin-bottom: 4.5em;
+}
+
+.sectionmotivasi h2 {
+    padding-bottom: 1.5em;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+@media (max-width : 480px) {
+
+    .body {
+        width: 50%;
+    }
+    .container {
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 500px ;
+        max-width: 800px;
+    }
+    .header {
+        max-width: 600px;
+        font-size: 5px;
+        width: 500px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .sectionyuk {
+        font-size: 12px;
+    }
+}
